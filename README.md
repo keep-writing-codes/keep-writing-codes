@@ -26,7 +26,7 @@ jiacai2050/                 # repo name
     	style.css
     	main.js 
 ```
-- 名为 keep-writing-codes.github.io 的 repo 是我们所有 task 最终提交版的 demo 地址，访问地址为 keep-writing-codes.github.io/task<id>。主页 keep-writing-codes.github.io 我们可以慢慢设计和完善，其中包括连接到各个 task demo 的链接、我们的个人介绍等。 
+- 名为 `keep-writing-codes.github.io` 的 repo 是我们所有 task 最终提交版的 demo 地址，访问地址为 `http://keep-writing-codes.github.io/task<id>` 。主页 `http://keep-writing-codes.github.io` 我们可以慢慢设计和完善，其中包括连接到各个 task demo 的链接、我们的个人介绍等。 
 ```
 keep-writing-codes.github.io/  	 # repo name
 	index.html 				     # 主页
