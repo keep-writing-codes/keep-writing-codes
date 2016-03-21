@@ -2,15 +2,12 @@
 
 > 系统学习前端知识，结交志同道合的小伙伴 😊
 
-## 春季班学习时间安排
+## 资料
 
-- http://weibo.com/p/1001603951573486205401
+- [春季班学习时间安排](http://weibo.com/p/1001603951573486205401)
+- [所有任务](http://ife.baidu.com/task/all)
 
-## task列表
-
-- http://ife.baidu.com/task/all
-
-## 组内学习计划
+## 学习计划
 
 - 每人一个 repo，名为自己 github 的用户名：如`vampirefan`、`jiacai2050`
 - 在自己的 repo 中，每个 task 一个文件夹，名为`task<id>`，比如`task1`、`task20`
@@ -21,12 +18,12 @@ jiacai2050/                 # repo name
     	css/style.css
     	js/main.js
     task2/                  # task2 folder
-    	img/
-    	index.html
+		index.html
+		img/logo.png
     	css/style.css
     	js/main.js
 ```
-- 名为 `keep-writing-codes.github.io` 的 repo 是我们所有 task 最终提交版的 demo 地址，访问地址为 `http://keep-writing-codes.github.io/task<id>` 。主页 `http://keep-writing-codes.github.io` 我们可以慢慢设计和完善，其中包括连接到各个 task demo 的链接、我们的个人介绍等。
+- 名为 `keep-writing-codes.github.io` 的 repo 是我们所有 task 最终提交版的 demo 地址，访问地址为 `http://keep-writing-codes.github.io/task<id>` 。主页 `http://keep-writing-codes.github.io` 可以慢慢设计和完善，可以包括每个小伙伴介绍等等。
 ```
 keep-writing-codes.github.io/  	 # repo name
 	index.html 				     # 主页
@@ -40,8 +37,17 @@ keep-writing-codes.github.io/  	 # repo name
     	css/style.css
     	js/main.js
 ```
-- [jiacai2050](https://github.com/jiacai2050) 在任务截至日期的前两天，review 所有组员的代码，整理出一个“最优”代码，放在 http://keep-writing-codes.github.io 这个 repo 中，其他小伙伴有任何意见或改进措施，提 ISSUE 。
+- [jiacai2050](https://github.com/jiacai2050) 在任务截至日期的前两天，review 所有组员的代码，整理出一个“最优”代码，放在 `keep-writing-codes.github.io` 这个 repo 中，其他小伙伴有任何意见或改进措施，提 ISSUE 。
 - 在任务截至日期前一天，向百度平台提交最优代码
 - 平时任何疑问，微信群讨论
+
+## 如何加入
+
+- 方式一：提 [issue](https://github.com/keep-writing-codes/keep-writing-codes/issues/1)
+- 方式二：微信群
+
+![](./wx.jpg)
+
+> 如果你只是想打打酱油，我并不欢迎，这年头有那么好玩有趣的事，为什么不去找个你喜欢的呢？
 
 > Happy coding
