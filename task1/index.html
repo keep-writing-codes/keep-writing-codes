@@ -1,0 +1,129 @@
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>任务一</title>
+</head>
+
+<body>
+    <marquee direction="right"> <h1>我是标题一</h1> </marquee>
+    <marquee direction="left"> <h2>我是标题二</h2> </marquee>
+    <marquee direction="up"> <h3>我是标题三</h3> </marquee>
+    <marquee direction="down"> <h4>我是标题四</h4> </marquee>
+    <hr>
+    <article>
+        <header>
+            <h2>我的第一篇文章</h2>
+        </header>
+        <section>
+            Hello world.
+        </section>
+        <footer>
+            <p>发布于 <time datetime="2016-03-23 08:44">2016-03-23 08:44</time> </p>
+        </footer>
+    </article>
+
+    <p>我是第一段</p>
+    <p>我是第二段</p>
+    <p>我是长段落我是长段落我是长段落我是长段落我是长段落我是长段落我是长段落我是长段落我是长段落我是长段落我是长段落我是长段落我是长段落我是长段落我是长段落我是长段落我是长段落我是长段落我是长段落我是长段落我是长段落我是长段落我是长段落我是长段落我是长段落我是长段落我是长段落我是长段落我是长段落我是长段落我是长段落</p>
+    <p><em>我是重要内容，表示形式为斜体，用 <code>em</code> 标签实现</em></p>
+    <p><i>我是与正文有区别的内容，表示形式也为斜体，用 <code>i</code> 标签实现</i></p>
+    <p><strong>我是加粗段落</strong></p>
+    <p>引用段落
+       <q cite="http://en.wikipedia.org/wiki/Kenny_McCormick#Cultural_impact">
+         Oh my God, you/they killed Kenny!
+       </q>.
+    </p>
+    <p><s>Today's Special: Salmon</s> SOLD OUT。 标签<code>s</code>表示数据不准确</p>
+    <p><del>Today's Special: Salmon</del> SOLD OUT。 标签<code>del</code>表示数据已被删除</p>
+    <p>Regular text. <samp>This is sample text.</samp> <code>samp</code>标签可以用来显示程序的输出</p>
+    <p>The chemical formula of water is H<sub>2</sub>O</p>
+    <p><ins>This text has been inserted</ins></p>
+
+    <p>
+        x<sup>2</sup> + y<sup>2</sup> = z<sup>2</sup>
+    </p>
+
+    <h3>下面是图片展示区</h3>
+    <img alt="有你才有赞" src="https://b.yzcdn.cn/v2/image/intro/logo@2x.png"></img>
+
+    <table border="10">
+        <tr>
+            <td>
+                <img src="http://img5.imgtn.bdimg.com/it/u=1419481867,4232768096&fm=21&gp=0.jpg" />
+            </td>
+            <td>
+                <img src="http://img2.imgtn.bdimg.com/it/u=3409078852,20731150&fm=21&gp=0.jpg" />
+            </td>
+            <td>
+                <img src="http://img5.imgtn.bdimg.com/it/u=3245661290,2111136433&fm=21&gp=0.jpg" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="http://img3.imgtn.bdimg.com/it/u=2685034100,3969338381&fm=21&gp=0.jpg" />
+            </td>
+            <td>
+                <img src="http://img0.imgtn.bdimg.com/it/u=85182508,72324014&fm=21&gp=0.jpg" />
+            </td>
+            <td>
+                <img src="http://img5.imgtn.bdimg.com/it/u=2779371233,4193844898&fm=21&gp=0.jpg" />
+            </td>
+        </tr>
+    </table>
+
+    <h2>2016 要做的事情</h2>
+    <ol>
+        <li><a href="https://book.douban.com/people/liujiacai/do">豆瓣我读</a>完成</li>
+        <li>减肥</li>
+        <li>扇贝网打卡</li>
+        <li>Hadoop 原理深入代码级别</li>
+        <li>业务项目，3+</li>
+        <li>SICP 所有章节完成</li>
+    </ol>
+
+    <h2>这是一个简单的加法器</h2>
+    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" name="b" value="50" /> +
+        <input type="number" name="a" value="10" /> =
+        <output name="result"></output>
+    </form>
+
+    <h2>这里以后是个侧栏，这是侧栏的标题</h2>
+    <h3>侧栏注册窗口标题</h3>
+    <label>邮箱：<input type="text" placeholder="输入你的邮箱"></input></label> <br/>
+    <label>密码：<input type="password" placeholder="输入你的密码"></input></label> <br/>
+    <label>Choose a browser from this list:
+    <input list="browsers" name="myBrowser" /></label><br/>
+    <datalist id="browsers">
+      <option value="Chrome">
+      <option value="Firefox">
+      <option value="Internet Explorer">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+    性别：<select>
+        <option>男</option>
+        <option>女</option>
+    </select>
+    <br/>
+    喜欢的水果：
+    <label><input name="Fruit" type="checkbox" value="apple" />苹果 </label>
+    <label><input name="Fruit" type="checkbox" value="peach" />桃子 </label>
+    <label><input name="Fruit" type="checkbox" value="banana" />香蕉 </label>
+    <label><input name="Fruit" type="checkbox" value="pearl" />梨 </label>
+    <br/>
+    学历：
+    <input type="radio" name="interest" value="undergraduate">本科
+    <input type="radio" name="interest" value="graduate">研究生
+    <input type="radio" name="interest" value="doctor">博士生
+    <br/>
+    个人简介：
+    <textarea rows="3" cols="20"></textarea>
+    <br/>
+    <input type="submit" value="提交了"></input>
+    <br/>
+    版权所有 &copy
+</body>
+
+</html>
