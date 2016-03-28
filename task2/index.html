@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>task 2</title>
+    <style type="text/css">
+    body {
+        font-family: SimHei;
+        background-color: LightGrey;
+    }
+    
+    a:hover {
+        color: gray;
+    }
+    
+    header {
+        background-color: #333333;
+        color: white;
+        position: relative;
+        height: 66px;
+    }
+    
+    header img {
+        position: absolute;
+        left: 15px;
+        top: 12px;
+    }
+    
+    header ul {
+        position: absolute;
+        right: 0;
+        top: 20px;
+        height: 60px;
+        font-size: 12px;
+    }
+    
+    header ul li {
+        float: left;
+        margin: 0 20px;
+    }
+    
+    header li a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    article,
+    aside {
+        margin: 25px 25px;
+        padding: 15px 25px;
+        background: white;
+        box-shadow: 2px 2px 3px black;
+    }
+    
+    article h2 {
+        color: #888;
+        font-size: 16px;
+    }
+    
+    article span {
+        color: #666;
+        font-size: 10px;
+    }
+    
+    .pic-list >li {
+        font-size: 12px;
+        text-align: center;
+        line-height: 20px;
+        width: 120px;
+        padding-top: 5px;
+        margin-top: 10px;
+        border: 1px solid #ccc;
+    }
+    
+    .pic-list img {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+    
+    table {
+        background: #ccc;
+        width: 100%;
+        text-align: left;
+    }
+    
+    table th {
+        background: #333;
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 4px 4px;
+    }
+    
+    table td {
+        background: #fff;
+        font-size: 12px;
+        padding: 4px 4px;
+    }
+    
+    table tfoot td {
+        background: #ccc;
+        font-weight: bold;
+    }
+    /* 侧栏 */
+    
+    aside h1 {
+        border-left: 3px solid #ccc;
+        padding: 8px 8px;
+        font-size: 16px;
+    }
+    
+    form {
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    .submit {
+        width: 100%;
+        background-color: #3333CC;
+        padding: 10px 10px;
+        font-size: 15px;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+    }
+    
+    footer {
+        height: 50px;
+        text-align: center;
+        font-weight: 300;
+        color: #fff;
+        background: #000;
+        padding-top: 15px;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="baidu_logo.png"></img>
+        <ul>
+            <li><a href="#">导航连接一</a></li>
+            <li><a href="#">导航连接二</a></li>
+            <li><a href="#">导航连接三</a></li>
+            <li><a href="#">导航连接四</a></li>
+        </ul>
+    </header>
+    <article>
+        <h1>文章一级标题</h1>
+        <h2>文章二级标题</h2>
+        <span>文章作者，发表时间</span>
+        <p>人最宝贵的东西是生命，生命对于每个人只有一次。人的一生应该是这样度过的：当他回首往事的时候，他不会因为虚度年华而悔恨，也不会因为碌碌无为而羞愧。这样，在临死的时候，他就能够说：“我的整个生命和全部的精力，都献给世界上最壮丽的事业——为人类的解放而斗争。</p>
+        <p>这人最宝贵的东西是生命，生命对于每个人只有一次。人的一生应该是这样度过的：当他回首往事的时候，他不会因为虚度年华而悔恨，也不会因为碌碌无为而羞愧。这样，在临死的时候，他就能够说：“我的整个生命和全部的精力，都献给世界上最壮丽的事业——为人类的解放而斗争。</p>
+        <p><b>链接到</b><a href="http://ife.baidu.com">http://ife.baidu.com</a></p>
+        <img src="http://vampirefan.github.io/blog//img/avatar.png" alt="picture">
+        <p><b>新窗口打开链接到</b><a href="http://ife.baidu.com" target="_blank">http://ife.baidu.com</a></p>
+    </article>
+    <article>
+        <h1>另一篇文章一级标题</h1>
+        <h2>文章二级标题</h2>
+        <span>文章作者，发表时间</span>
+        <p>人最宝贵的东西是生命，生命对于每个人只有一次。人的一生应该是这样度过的：当他回首往事的时候，他不会因为虚度年华而悔恨，也不会因为碌碌无为而羞愧。这样，在临死的时候，他就能够说：“我的整个生命和全部的精力，都献给世界上最壮丽的事业——为人类的解放而斗争。</p>
+        <img src="http://vampirefan.github.io/blog//img/avatar.png" alt="picture">
+        <ul>
+            <li>列表项目一</li>
+            <li>列表项目二</li>
+            <li>列表项目三</li>
+        </ul>
+    </article>
+    <article>
+        <h1>图片</h1>
+        <ul style="list-style-type:none" class="pic-list">
+            <li>
+                好看的图片</br><img src="http://vampirefan.github.io/blog//img/avatar.png" alt="picture">
+            </li>
+            <li>
+                好看的图片</br><img src="http://vampirefan.github.io/blog//img/avatar.png" alt="picture">
+            </li>
+            <li>
+                好看的图片</br><img src="http://vampirefan.github.io/blog//img/avatar.png" alt="picture">
+            </li>
+        </ul>
+    </article>
+    <article>
+        <h1>最后一段一级标题</h1>
+        <h2>文章二级标题</h2>
+        <span>文章作者，发表时间</span>
+        <ol>
+            <li>排名1</li>
+            <li>排名2</li>
+            <li>排名3</li>
+        </ol>
+        <p>下面是一个表格，给表格加上一个border=1好让你看出是一个表格</p>
+        <table>
+            <tr>
+                <th>表头</th>
+                <th>表头</th>
+                <th>表头</th>
+            </tr>
+            <tr>
+                <td>表内容单元格</td>
+                <td>表内容单元格</td>
+                <td><a href="#">操作</a></td>
+            </tr>
+            <tr>
+                <td>表内容单元格</td>
+                <td>表内容单元格</td>
+                <td><a href="#">操作</a></td>
+            </tr>
+            <tr>
+                <td>表内容单元格</td>
+                <td>表内容单元格</td>
+                <td><a href="#">操作</a></td>
+            </tr>
+            <tr>
+                <td>表内容单元格</td>
+                <td>表内容单元格</td>
+                <td><a href="#">操作</a></td>
+            </tr>
+            <tfoot>
+                <td>总计</td>
+                <td colspan="2">1000</td>
+            </tfoot>
+        </table>
+    </article>
+    <aside>
+        <h1>这里以后是一个侧栏这是侧栏的标题</h1>
+        <form>
+            <table cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td align="right">请输入邮箱地址:</td>
+                        <td>
+                            <input type="text" value="这是一个文本输入框">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><small>邮箱地址请按要求格式输入</small></td>
+                    </tr>
+                    <tr>
+                        <td align="right">请输入密码:</td>
+                        <td>
+                            <input type="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">请重复输入密码:</td>
+                        <td>
+                            <input type="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right"></td>
+                        <td><small>密码请为6-16位英文字母或者数字</small></td>
+                    </tr>
+                    <tr>
+                        <td align="right">性别:</td>
+                        <td>
+                            <input type="radio" name="sex">男
+                            <input type="radio" name="sex">女</td>
+                    </tr>
+                    <tr>
+                        <td align="right">城市:</td>
+                        <td>
+                            <select>
+                                <option value="1">北京</option>
+                                <option value="2">上海</option>
+                                <option value="3">广州</option>
+                            </select>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">爱好:</td>
+                        <td>
+                            <input type="checkbox">运动
+                            <input type="checkbox">艺术
+                            <input type="checkbox">科学
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" valign="top">个人描述:</td>
+                        <td>
+                            <textarea rows="5" cols="40" style="overflow:hidden"> 这是多行文本框，请输入您的描述
+                            </textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" value="确认提交" class="submit">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </aside>
+</body>
+<footer>
+    版权所有©
+</footer>
+
+</html>
