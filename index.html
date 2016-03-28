@@ -5,17 +5,116 @@
     <title>百度前端技术学院任务</title>
     <meta name="author" content="http://keep-writing-codes.github.io/" />
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
-
+    <script type="text/javascript" src="js/underscore-min.js"></script>
+    <script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+    <script type="text/javascript">
+    // 加入完成任务的标题以及id
+    var tasks = {
+        1: '任务一：零基础HTML编码',
+        2: '任务二：零基础HTML及CSS编码（一）',
+        3: '任务三：三栏式布局',
+        4: '任务四：定位和居中问题',
+        5: '任务五：零基础HTML及CSS编码（二）',
+        6: '任务六：通过HTML及CSS模拟报纸排版',
+        8: '任务八：响应式网格（栅格化）布局',
+        10: '任务十：Flexbox 布局练习',
+    };
+    var linkToIFE = "http://ife.baidu.com/task/detail?taskId=";
+    var linkToDemo = "/task";
+    var linkToRepo = "https://github.com/keep-writing-codes/keep-writing-codes.github.io/tree/master/task";
+    $(document).ready(function() {
+        for (var index in _.keys(tasks)) {
+            var key = _.keys(tasks)[index];
+            var ife = '<a href="' + linkToIFE + key + '">' + tasks[key] + '</a> : ';
+            var demo = '<a href="' + linkToDemo + key + '">' + 'Demo</a> ';
+            var repo = '<a href="' + linkToRepo + key + '">' + 'Repo</a> ';
+            $('.task-list').append('<li>' + ife + demo + repo + '</li>');
+        }
+    });
+    </script>
+    <style type="text/css">
+    body {
+        font-family: SimHei;
+        /*background-color: LightGrey;*/
+        background-image: url('img/retina_dust.png');
+        color: #333;
+    }
+    
+    header {
+        text-align: center;
+        margin-bottom: 50px;
+        color: #333;
+    }
+    
+    article {
+        margin-bottom: 50px;
+        margin-left: 10%;
+    }
+    
+    article >ul >li {
+        margin-bottom: 15px;
+    }
+    
+    a {
+        margin-left: 10px;
+        text-decoration: none;
+        color: #555;
+        font-weight: bold;
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    a:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        background: #9c9;
+        height: 2px;
+        color: #9c9;
+        -webkit-transition-property: left, right;
+        transition-property: left, right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+    
+    a:hover:before,
+    a:focus:before,
+    a:active:before {
+        left: 0;
+        right: 0;
+    }
+    
+    footer {
+        text-align: center;
+    }
+    </style>
 </head>
 
 <body>
-    <a href="https://github.com/keep-writing-codes/keep-writing-codes"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67"
-            alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+    <a href="https://github.com/keep-writing-codes/keep-writing-codes"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+    <header>
+        <h1>KWC(Keep Writing Codings)'s <a target="_blank" href="http://ife.baidu.com/task/all">IFE tasks</a></h1>
 
-    <h3>百度前端技术学院<a target="_blank" href="http://ife.baidu.com/task/all">任务</a></h3>
-    <ul>
-        <li><a href="/task1">任务一</a></li>
-    </ul>
+    </header>
+    <article>
+        <ul class="task-list"></ul>
+    </article>
+    <footer>
+        Copyright © 2016 - KWC(Keep Writing Codings)
+    </footer>
 </body>
 
 </html>
