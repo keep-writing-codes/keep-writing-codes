@@ -2,7 +2,7 @@
 
 <head>
     <meta charset='utf-8'>
-    <title>百度前端技术学院任务</title>
+    <title>百度前端技术学院任务 - KWC</title>
     <meta name="author" content="http://keep-writing-codes.github.io/" />
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     <script type="text/javascript" src="js/underscore-min.js"></script>
@@ -18,6 +18,7 @@
         6: '任务六：通过HTML及CSS模拟报纸排版',
         8: '任务八：响应式网格（栅格化）布局',
         10: '任务十：Flexbox 布局练习',
+        12: '任务十二：学习CSS 3的新特性',
     };
     var linkToIFE = "http://ife.baidu.com/task/detail?taskId=";
     var linkToDemo = "/task";
@@ -25,10 +26,10 @@
     $(document).ready(function() {
         for (var index in _.keys(tasks)) {
             var key = _.keys(tasks)[index];
-            var ife = '<a class="link" href="' + linkToIFE + key + '">' + tasks[key] + '</a> : ';
-            var demo = '<a class="link" href="' + linkToDemo + key + '">' + 'Demo</a> ';
-            var repo = '<a class="link" href="' + linkToRepo + key + '">' + 'Repo</a> ';
-            $('.task-list').append('<li>' + ife + demo + repo + '</li>');
+            var ife = '<td><a class="link" href="' + linkToIFE + key + '">' + tasks[key] + '</a></td>';
+            var demo = '<td style="text-align:right"><a class="link" href="' + linkToDemo + key + '">' + 'Demo</a></td>';
+            var repo = '<td style="text-align:right"><a class="link" href="' + linkToRepo + key + '">' + 'Repo</a></td>';
+            $('.task-list').append('<tr>' + ife + demo + repo + '</tr>');
         }
     });
     </script>
@@ -47,18 +48,23 @@
     }
     
     article {
-        margin-bottom: 50px;
-        margin-left: 10%;
+        max-width: 660px;
+        min-width: 460px;
+        margin: 0 auto;
     }
     
-    article >ul >li {
-        margin-bottom: 15px;
+    table {
+        width: 100%;
+    }
+    
+    td {
+        line-height: 30px;
     }
     
     .link {
         margin-left: 10px;
         text-decoration: none;
-        color: #555;
+        color: #444;
         font-weight: bold;
         display: inline-block;
         vertical-align: middle;
@@ -70,6 +76,7 @@
         -moz-osx-font-smoothing: grayscale;
         position: relative;
         overflow: hidden;
+        transition: all 0.3s;
     }
     
     .link:before {
@@ -97,7 +104,12 @@
         right: 0;
     }
     
+    .link:hover {
+        color: green;
+    }
+    
     footer {
+        margin-top: 60px;
         text-align: center;
     }
     </style>
@@ -110,7 +122,7 @@
 
     </header>
     <article>
-        <ul class="task-list"></ul>
+        <table class="task-list"></table>
     </article>
     <footer>
         Copyright © 2016 - KWC(Keep Writing Codings)

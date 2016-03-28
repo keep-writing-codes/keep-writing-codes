@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>task 12</title>
+    <style type="text/css">
+    main {
+        width: 600px;
+        margin: 0 auto;
+    }
+    
+    article {
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    
+    .rank-table {
+        text-align: left;
+    }
+    
+    .rank-table th {
+        color: white;
+        background-color: black;
+    }
+    
+    .rank-table tr:nth-child(odd) {
+        background-color: #ccc;
+    }
+    
+    .rank-table-winner {
+        color: red;
+    }
+    
+    input {
+        width: 150px;
+        transition: width 0.3s;
+    }
+    
+    input:focus {
+        width: 280px;
+    }
+    
+    .box {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .box-container {
+        width: 900px;
+        position: relative;
+        padding: 0;
+        font-size: 0;
+        letter-spacing: normal;
+        word-spacing: normal;
+        transition: 0.5s left;
+    }
+    
+    .box-container li {
+        display: inline-block;
+        list-style: none;
+        width: 300px;
+        height: 100px;
+    }
+    
+    .box-container li:nth-child(1) {
+        background-color: green;
+    }
+    
+    .box-container li:nth-child(2) {
+        background-color: blue;
+    }
+    
+    .box-container li:nth-child(3) {
+        background-color: red;
+    }
+    
+    .box-controller {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .box-controller a {
+        text-decoration: none;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: rgba(255, 255, 255, 0.5);
+        text-align: center;
+        color: white;
+    }
+    
+    #box1:target~.box-container {
+        left: 0
+    }
+    
+    #box2:target~.box-container {
+        left: -100%;
+    }
+    
+    #box3:target~.box-container {
+        left: -200%;
+    }
+    </style>
+</head>
+
+<body>
+    <main>
+        <article>
+            <table class="rank-table">
+                <tbody>
+                    <tr>
+                        <th>排名</th>
+                        <th>网站</th>
+                        <th>热度</th>
+                    </tr>
+                    <tr class="rank-table-winner">
+                        <td>1.</td>
+                        <td>百度前端技术学院</td>
+                        <td>13000</td>
+                    </tr>
+                    <tr class="rank-table-winner">
+                        <td>2.</td>
+                        <td>百度前端技术学院</td>
+                        <td>12000</td>
+                    </tr>
+                    <tr class="rank-table-winner">
+                        <td>3.</td>
+                        <td>百度前端技术学院</td>
+                        <td>11000</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>百度前端技术学院</td>
+                        <td>10000</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>百度前端技术学院</td>
+                        <td>9000</td>
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td>百度前端技术学院</td>
+                        <td>8000</td>
+                    </tr>
+                    <tr>
+                        <td>7.</td>
+                        <td>百度前端技术学院</td>
+                        <td>7000</td>
+                    </tr>
+                    <tr>
+                        <td>8.</td>
+                        <td>百度前端技术学院</td>
+                        <td>6000</td>
+                    </tr>
+                    <tr>
+                        <td>9.</td>
+                        <td>百度前端技术学院</td>
+                        <td>5000</td>
+                    </tr>
+                    <tr>
+                        <td>10.</td>
+                        <td>百度前端技术学院</td>
+                        <td>4000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <article>
+            <input type="text" placeholder="focus could change width">
+        </article>
+        <article>
+            <div class="box">
+                <p id="box1"></p>
+                <p id="box2"></p>
+                <p id="box3"></p>
+                <ul class="box-container">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div class="box-controller">
+                    <a href="#box1">1</a>
+                    <a href="#box2">2</a>
+                    <a href="#box3">3</a>
+                </div>
+            </div>
+        </article>
+    </main>
+</body>
+
+</html>
