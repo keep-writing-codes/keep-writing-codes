@@ -25,9 +25,9 @@
     $(document).ready(function() {
         for (var index in _.keys(tasks)) {
             var key = _.keys(tasks)[index];
-            var ife = '<a href="' + linkToIFE + key + '">' + tasks[key] + '</a> : ';
-            var demo = '<a href="' + linkToDemo + key + '">' + 'Demo</a> ';
-            var repo = '<a href="' + linkToRepo + key + '">' + 'Repo</a> ';
+            var ife = '<a class="link" href="' + linkToIFE + key + '">' + tasks[key] + '</a> : ';
+            var demo = '<a class="link" href="' + linkToDemo + key + '">' + 'Demo</a> ';
+            var repo = '<a class="link" href="' + linkToRepo + key + '">' + 'Repo</a> ';
             $('.task-list').append('<li>' + ife + demo + repo + '</li>');
         }
     });
@@ -42,7 +42,7 @@
     
     header {
         text-align: center;
-        margin-bottom: 50px;
+        margin: 50px;
         color: #333;
     }
     
@@ -55,7 +55,7 @@
         margin-bottom: 15px;
     }
     
-    a {
+    .link {
         margin-left: 10px;
         text-decoration: none;
         color: #555;
@@ -72,7 +72,7 @@
         overflow: hidden;
     }
     
-    a:before {
+    .link:before {
         content: "";
         position: absolute;
         z-index: -1;
@@ -90,9 +90,9 @@
         transition-timing-function: ease-out;
     }
     
-    a:hover:before,
-    a:focus:before,
-    a:active:before {
+    .link:hover:before,
+    .link:focus:before,
+    .link:active:before {
         left: 0;
         right: 0;
     }
@@ -106,7 +106,7 @@
 <body>
     <a href="https://github.com/keep-writing-codes/keep-writing-codes"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
     <header>
-        <h1>KWC(Keep Writing Codings)'s <a target="_blank" href="http://ife.baidu.com/task/all">IFE tasks</a></h1>
+        <h1>KWC(Keep Writing Codings)'s <a class="link" target="_blank" href="http://ife.baidu.com/task/all">IFE tasks</a></h1>
 
     </header>
     <article>
