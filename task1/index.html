@@ -31,6 +31,23 @@
         <p><b>链接到</b><a href="http://ife.baidu.com">http://ife.baidu.com</a></p>
         <img src="/wx.jpg" alt="picture">
         <p><b>新窗口打开链接到</b><a href="http://ife.baidu.com" target="_blank">http://ife.baidu.com</a></p>
+        <p><em>我是重要内容，表示形式为斜体，用 <code>em</code> 标签实现</em></p>
+        <p><i>我是与正文有区别的内容，表示形式也为斜体，用 <code>i</code> 标签实现</i></p>
+        <p><strong>我是加粗段落</strong></p>
+        <p>引用段落
+           <q cite="http://en.wikipedia.org/wiki/Kenny_McCormick#Cultural_impact">
+             Oh my God, you/they killed Kenny!
+           </q>.
+        </p>
+        <p><s>Today's Special: Salmon</s> SOLD OUT。 标签<code>s</code>表示数据不准确</p>
+        <p><del>Today's Special: Salmon</del> SOLD OUT。 标签<code>del</code>表示数据已被删除</p>
+        <p>Regular text. <samp>This is sample text.</samp> <code>samp</code>标签可以用来显示程序的输出</p>
+        <p>The chemical formula of water is H<sub>2</sub>O</p>
+        <p><ins>This text has been inserted</ins></p>
+
+        <p>
+            x<sup>2</sup> + y<sup>2</sup> = z<sup>2</sup>
+        </p>
     </article>
     <article>
         <h1>另一篇文章一级标题</h1>
@@ -108,10 +125,19 @@
             <input type="text" placeholder="这是一个文本输入框">
             <p>邮箱地址请按格式输入</p>
             <label>请输入密码</label>
-            <input type="password" placeholder="这是一个文本输入框">&nbsp
+            <input type="password" placeholder="这是一个文本输入框"><br>
             <label>请重复输入密码</label>
             <input type="password" placeholder="这是一个文本输入框">
             <p>密码为6-16位英文数字</p>
+            <label>Choose a browser from this list:
+            <input list="browsers" name="myBrowser" /></label><br/>
+            <datalist id="browsers">
+              <option value="Chrome">
+              <option value="Firefox">
+              <option value="Internet Explorer">
+              <option value="Opera">
+              <option value="Safari">
+            </datalist>
             <label>性别：</label>
             <input type="radio" checked="ture" value="1" name="gender">男
             <input type="radio" value="0" name="gender">女
